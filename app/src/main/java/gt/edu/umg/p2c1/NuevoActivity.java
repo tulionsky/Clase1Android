@@ -18,7 +18,9 @@ public class NuevoActivity extends AppCompatActivity {
     EditText txtNombre, txtTelefono, txtEmail;
     Button btnGuardar;
     DbContactos dbContactos;
-//nomas pal git
+    Button btn_regresar;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,11 @@ public class NuevoActivity extends AppCompatActivity {
         txtTelefono = findViewById(R.id.txtTelefono);
         txtEmail = findViewById(R.id.txtEmail);
         btnGuardar = findViewById(R.id.btnGuardar);
+        btn_regresar = findViewById(R.id.btn_regresar);
+
+        btn_regresar.setOnClickListener(view -> {
+            finish();
+        });
 
         //inicializar la base de datos
         dbContactos = new DbContactos(this);

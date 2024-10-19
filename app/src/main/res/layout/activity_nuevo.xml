@@ -41,6 +41,12 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BLANKY MARISOL LOPEZ MARROQUIN 0905-23-5227" />
+        android:text="TULIO RENE ALEJANDRO QUINTANA AMEZQUITA 0905-23-5024" />
+
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_regresar" />
 
 </LinearLayout>
